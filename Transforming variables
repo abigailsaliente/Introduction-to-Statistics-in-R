@@ -1,0 +1,6 @@
+# Scatterplot of happiness_score vs. gdp_per_cap
+ggplot(world_happiness, aes(gdp_per_cap, happiness_score)) +
+  geom_point()
+
+# Calculate correlation
+cor(world_happiness$gdp_per_cap, world_happiness$happiness_score)
